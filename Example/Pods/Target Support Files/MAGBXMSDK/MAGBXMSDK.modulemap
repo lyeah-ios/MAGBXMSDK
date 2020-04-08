@@ -1,0 +1,6 @@
+framework module MAGBXMSDK {
+  umbrella header "MAGBXMSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

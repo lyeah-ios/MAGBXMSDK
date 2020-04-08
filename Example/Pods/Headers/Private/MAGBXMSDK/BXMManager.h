@@ -1,0 +1,1 @@
+../../../../../MAGBXMSDK/Classes/BXMSDK/BXMManager.h

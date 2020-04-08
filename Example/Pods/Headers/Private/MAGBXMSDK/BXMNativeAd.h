@@ -1,0 +1,1 @@
+../../../../../MAGBXMSDK/Classes/BXMSDK/BXMNativeAd.h

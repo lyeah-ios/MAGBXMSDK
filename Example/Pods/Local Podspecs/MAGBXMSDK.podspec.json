@@ -1,0 +1,51 @@
+{
+  "name": "MAGBXMSDK",
+  "version": "2.1.0",
+  "summary": "MAGAPP BXMSDK.",
+  "homepage": "https://github.com/lyeah-ios/MAGBXMSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zisu": "zisulwl@163.com"
+  },
+  "source": {
+    "git": "https://github.com/lyeah-ios/MAGBXMSDK.git",
+    "tag": "2.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "MAGBXMSDK/Classes/**/*",
+  "resource_bundles": {
+    "MAGBXMSDK": [
+      "MAGBXMSDK/Assets/**/*"
+    ]
+  },
+  "libraries": [
+    "resolv",
+    "c++",
+    "z",
+    "xml2"
+  ],
+  "frameworks": [
+    "AdSupport",
+    "CoreLocation",
+    "QuartzCore",
+    "SystemConfiguration",
+    "CoreTelephony",
+    "Security",
+    "StoreKit",
+    "AVFoundation",
+    "WebKit"
+  ],
+  "dependencies": {
+    "GDTMobSDK": [
+
+    ],
+    "Bytedance-UnionAD": [
+
+    ]
+  }
+}
