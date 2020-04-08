@@ -18,10 +18,12 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'MAGBXMSDK/Classes/*.h'
-  s.resource     = 'MAGBXMSDK/Assets/BXMAdSDK.bundle'
-  s.vendored_libraries  = 'MAGBXMSDK/Classes/libBXMSDK.a'  
+  s.source_files = 'MAGBXMSDK/*.h'
+  s.resource     = 'MAGBXMSDK/BXMAdSDK.bundle'
+  s.vendored_libraries  = 'MAGBXMSDK/libBXMSDK.a'  
 
   s.libraries         = 'resolv', 'c++', 'z', 'xml2'
   s.frameworks        = 'AdSupport', 'CoreLocation', 'QuartzCore', 'SystemConfiguration', 'CoreTelephony', 'Security', 'StoreKit', 'AVFoundation', 'WebKit'
+  s.dependency 'GDTMobSDK'
+  s.dependency 'Bytedance-UnionAD'
 end

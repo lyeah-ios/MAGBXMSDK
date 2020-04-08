@@ -1,1 +1,1 @@
-../../../../../MAGBXMSDK/Classes/BXMSDK/BXMEnumFile.h
+../../../../../MAGBXMSDK/BXMEnumFile.h

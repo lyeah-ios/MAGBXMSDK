@@ -247,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = zisulu;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 67WAZ4SGXX;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -346,11 +349,13 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MAGBXMSDK_Example/Pods-MAGBXMSDK_Example-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/MAGBXMSDK/MAGBXMSDK.bundle",
+				"${PODS_ROOT}/Bytedance-UnionAD/Bytedance-UnionAd/Frameworks/BUAdSDK.bundle",
+				"${PODS_ROOT}/../../MAGBXMSDK/BXMAdSDK.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MAGBXMSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BUAdSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BXMAdSDK.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -494,6 +499,7 @@
 			baseConfigurationReference = 2E7A7CED70DDC2C197E4587F /* Pods-MAGBXMSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 67WAZ4SGXX;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MAGBXMSDK/MAGBXMSDK-Prefix.pch";
 				INFOPLIST_FILE = "MAGBXMSDK/MAGBXMSDK-Info.plist";
@@ -510,6 +516,7 @@
 			baseConfigurationReference = 9307777D1DB508594852B9C5 /* Pods-MAGBXMSDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 67WAZ4SGXX;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MAGBXMSDK/MAGBXMSDK-Prefix.pch";
 				INFOPLIST_FILE = "MAGBXMSDK/MAGBXMSDK-Info.plist";

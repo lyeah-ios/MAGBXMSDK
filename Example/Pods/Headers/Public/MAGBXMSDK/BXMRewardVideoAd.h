@@ -1,1 +1,1 @@
-../../../../../MAGBXMSDK/Classes/BXMSDK/BXMRewardVideoAd.h
+../../../../../MAGBXMSDK/BXMRewardVideoAd.h

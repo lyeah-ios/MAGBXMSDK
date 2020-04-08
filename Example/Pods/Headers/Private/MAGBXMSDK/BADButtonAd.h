@@ -1,1 +1,1 @@
-../../../../../MAGBXMSDK/Classes/BXMSDK/BADButtonAd.h
+../../../../../MAGBXMSDK/BADButtonAd.h

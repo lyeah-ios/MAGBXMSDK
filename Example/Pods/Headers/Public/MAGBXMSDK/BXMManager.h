@@ -1,1 +1,1 @@
-../../../../../MAGBXMSDK/Classes/BXMSDK/BXMManager.h
+../../../../../MAGBXMSDK/BXMManager.h

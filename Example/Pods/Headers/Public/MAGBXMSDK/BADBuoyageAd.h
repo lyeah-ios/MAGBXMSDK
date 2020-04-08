@@ -1,1 +1,1 @@
-../../../../../MAGBXMSDK/Classes/BXMSDK/BADBuoyageAd.h
+../../../../../MAGBXMSDK/BADBuoyageAd.h

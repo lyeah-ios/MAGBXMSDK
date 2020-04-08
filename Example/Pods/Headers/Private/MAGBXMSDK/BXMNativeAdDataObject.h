@@ -1,1 +1,1 @@
-../../../../../MAGBXMSDK/Classes/BXMSDK/BXMNativeAdDataObject.h
+../../../../../MAGBXMSDK/BXMNativeAdDataObject.h

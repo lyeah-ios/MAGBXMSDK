@@ -1,1 +1,1 @@
-../../../../../MAGBXMSDK/Classes/BXMSDK/BXMFullScreenAd.h
+../../../../../MAGBXMSDK/BXMFullScreenAd.h

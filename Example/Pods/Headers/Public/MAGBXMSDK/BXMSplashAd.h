@@ -1,1 +1,1 @@
-../../../../../MAGBXMSDK/Classes/BXMSDK/BXMSplashAd.h
+../../../../../MAGBXMSDK/BXMSplashAd.h

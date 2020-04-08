@@ -1,15 +1,28 @@
 PODS:
-  - MAGBXMSDK (2.1.0)
+  - Bytedance-UnionAD (2.9.0.1)
+  - GDTMobSDK (4.11.6):
+    - GDTMobSDK/GDTMobSDK (= 4.11.6)
+  - GDTMobSDK/GDTMobSDK (4.11.6)
+  - MAGBXMSDK (2.1.0):
+    - Bytedance-UnionAD
+    - GDTMobSDK
 
 DEPENDENCIES:
   - MAGBXMSDK (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Bytedance-UnionAD
+    - GDTMobSDK
 
 EXTERNAL SOURCES:
   MAGBXMSDK:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MAGBXMSDK: fcf22cea9916ca9f0c21e902b9399d8dacb67494
+  Bytedance-UnionAD: e145f7e98e5a714332d7d31e764696e569483755
+  GDTMobSDK: ecd24483bd0be41f56b70ce3d12e4b18d76ab06b
+  MAGBXMSDK: ccc04b55b315eff6a359ba716520c19522b2394b
 
 PODFILE CHECKSUM: 5e21743fcf04a6a06010fe712c11555887706274
 

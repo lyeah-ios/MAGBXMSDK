@@ -1,1 +1,1 @@
-../../../../../MAGBXMSDK/Classes/BXMSDK/BXMInterstitialAd.h
+../../../../../MAGBXMSDK/BXMInterstitialAd.h

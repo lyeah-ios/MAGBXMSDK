@@ -1,1 +1,1 @@
-../../../../../MAGBXMSDK/Classes/BXMSDK/BXMBannerAd.h
+../../../../../MAGBXMSDK/BXMBannerAd.h

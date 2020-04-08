@@ -1,1 +1,1 @@
-../../../../../MAGBXMSDK/Classes/BXMSDK/BXMNativeExpressAd.h
+../../../../../MAGBXMSDK/BXMNativeExpressAd.h
