@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.source_files = 'MAGBXMSDK/Classes/**/*'
   
   s.resource_bundles = {
-     'MAGBXMSDK' => ['MAGBXMSDK/Assets/**/*']
+     'BXMSDK' => ['MAGBXMSDK/Assets/**/*']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
