@@ -39,13 +39,5 @@
     "StoreKit",
     "AVFoundation",
     "WebKit"
-  ],
-  "dependencies": {
-    "GDTMobSDK": [
-
-    ],
-    "Bytedance-UnionAD": [
-
-    ]
-  }
+  ]
 }
