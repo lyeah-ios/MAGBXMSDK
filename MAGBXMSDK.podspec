@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'MAGBXMSDK/Classes/*.h'
-  s.resource     = 'MAGBXMSDK/Assets/BXMSDK.bundle'
+  s.resource     = 'MAGBXMSDK/Assets/BXMAdSDK.bundle'
   s.vendored_libraries  = 'MAGBXMSDK/Classes/libBXMSDK.a'  
 
   s.libraries         = 'resolv', 'c++', 'z', 'xml2'
