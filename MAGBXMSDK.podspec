@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MAGBXMSDK'
-  s.version          = '2.1.0'
+  s.version          = '2.3.0'
   s.summary          = 'MAGAPP BXMSDK.'
 
   s.homepage         = 'https://github.com/lyeah-ios/MAGBXMSDK'

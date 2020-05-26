@@ -10,33 +10,32 @@
 #import <UIKit/UIKit.h>
 #import "BXMEnumFile.h"
 
-
+@class BXMBannerAd;
 @protocol BXMBannerAdDelegate <NSObject>
 
 @optional
 
-
 /**
          数据加载成功
  */
--(void)bxmBannerAdDataLoadSucess;
+-(void)bxmBannerAdDataLoadSucess:(BXMBannerAd *_Nullable) bannerAd    bannerView:(UIView *_Nullable)bannerView ;
 /**
         视图加载成功
  */
--(void)bxmBannerShowSucess;
+-(void)bxmBannerShowSucess:(BXMBannerAd *_Nullable) bannerAd    bannerView:(UIView *_Nullable)bannerView;
 /**
      视图加载失败
  */
--(void)bxmBannerShowFailure:(NSError *_Nullable)error;
+-(void)bxmBannerLoadFailure:(NSError *_Nullable)error bannerAd:(BXMBannerAd *_Nullable) bannerAd    bannerView:(UIView *_Nullable)bannerView;
 /**
      视图点击
  */
--(void)bxmBannerClik;
+-(void)bxmBannerClik:(BXMBannerAd *_Nullable) bannerAd    bannerView:(UIView *_Nullable)bannerView;
 
 /***
      视图关闭
  */
--(void)bxmBannerClose;
+-(void)bxmBannerClose:(BXMBannerAd *_Nullable) bannerAd    bannerView:(UIView *_Nullable)bannerView;
 
 
 
@@ -54,16 +53,13 @@ NS_ASSUME_NONNULL_BEGIN
        rootController 设置跟控制器
  */
 - (instancetype)initWithAdId:(NSString *)adId
-                   imageSize:(BXMAdImageSize )imageSize
                  bannerFrame:(CGRect )frame
                rootContrller:(UIViewController *)rootController;
 
+
 //显示 BannerView
 -(void)bannerShowView:(UIView *)showView;
-/**
-       移除Banner
- */
--(void)removeBanner;
+
               
 @end
 

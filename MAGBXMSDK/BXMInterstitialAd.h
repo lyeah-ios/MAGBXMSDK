@@ -55,10 +55,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initInterstitialAdWithAdId:(NSString *)adId;
 
 /**
-       加载刷新数据
- */
--(void)loadAdData;
-/**
       展示开屏广告
      controller ：当前控制器
  */

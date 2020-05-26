@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+@class BADBuoyageAd;
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol BADBuoyageAdDelagate <NSObject>
@@ -16,21 +17,21 @@ NS_ASSUME_NONNULL_BEGIN
 /**
         浮标加载数据成功
  */
--(void)badBuoyageLoadDataSuccess;
+-(void)badBuoyageLoadDataSuccess:(BADBuoyageAd *)buoyageAd  buoyageView:(UIView *)buoyageView  ;
 /**
  浮标展示成功
  */
--(void)badBuoyageShowSuccess;
+-(void)badBuoyageShowSuccess:(BADBuoyageAd *)buoyageAd  buoyageView:(UIView *)buoyageView ;
 
 /**
           浮标加载失败
  */
--(void)badBuoyageloadFailure:(NSError *)error;
+-(void)badBuoyageloadFailure:(NSError *)error buoyageAd:(BADBuoyageAd *)buoyageAd  buoyageView:(UIView *)buoyageView ;
 
 /**
           浮标点点击
  */
--(void)badBuoyageClick;
+-(void)badBuoyageClick:(BADBuoyageAd *)buoyageAd  buoyageView:(UIView *)buoyageView;
 
 
 
@@ -41,11 +42,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,weak)id <BADBuoyageAdDelagate > delegate;
 
 /**
-      浮标初始化
-    adId:广告位Id
-    frame:浮标frame
-    controller:当前控制器
- */
+   浮标初始化
+   adId:广告位Id
+   frame:浮标frame 建议设置 width 与 height 一直，如果 width 与Height不一致，将以最小值为准，
+   controller:当前控制器
+*/
 - (instancetype)initWithAdId:(NSString *)adId
                        frame:(CGRect )frame
                   controller:(UIViewController *)controller;

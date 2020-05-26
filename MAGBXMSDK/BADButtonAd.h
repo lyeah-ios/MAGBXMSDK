@@ -8,27 +8,28 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+@class BADButtonAd;
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol  BADButtonAdDelagate <NSObject>
 @optional
 /**
-             按钮请求数据成功
+             按钮据加载成功
  */
--(void)badBurttonloadDataSuccess;
+-(void)badBurttonloadDataSuccess:(BADButtonAd *)buttonAd  buttonView:(UIView *)buttonView;
 /**
- 按钮成功展示
+    按钮成功展示
  */
--(void)badBurttonShowSuccess;
+-(void)badBurttonShowSuccess:(BADButtonAd *)buttonAd  buttonView:(UIView *)buttonView;
 /**
 
-             按钮加载失败
+            按钮加载失败
  */
--(void)badBurttonloadFaliure:(NSError *)error;
+-(void)badBurttonloadFaliure:(NSError *)error buttonAd:(BADButtonAd *)buttonAd  buttonView:(UIView *)buttonView;
 /**
     按钮点击
  */
--(void)badBurttonClick;
+-(void)badBurttonClick:(BADButtonAd *)buttonAd  buttonView:(UIView *)buttonView;
 
 @end
 

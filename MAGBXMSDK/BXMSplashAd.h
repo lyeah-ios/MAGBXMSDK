@@ -43,19 +43,20 @@
 @property(nonatomic,weak)id <BXMSplshAdDelegate> delegate;
 
 /**
-       设置拉取广告超时时间，
-        详解：拉取广告超时时间，开发者调用loadAd方法以后会立即展示backgroundImage，然后在该超时时间内，如果广告拉
- *   取成功，则立马展示开屏广告，否则放弃此次广告展示机会。
-*/
-@property (nonatomic, assign) NSInteger fetchDelay;
+  初始化
+ @param adId 广告位Id
+ @param vc  用于逻辑跳转
+ */
+- (instancetype)initWithAdId:(NSString *)adId
+          rootViewController:(UIViewController *)vc;
 
-/// 初始化
-/// @param adId  // 广告位Id
-- (instancetype)initWithAdId:(NSString *)adId;
 
-/// 展示开屏
-/// @param window w indow
--(void)splashShowWindow:(UIWindow *)window;
+/**
+ 
+    开屏显示
+ @param window   用于展示开屏
+ */
+-(void)bxm_splashShowWindow:(UIWindow *)window;
 
 @end
 
