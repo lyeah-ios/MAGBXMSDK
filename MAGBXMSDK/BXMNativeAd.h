@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "BXMNativeAdDataObject.h"
 
+@class BXMNativeAd;
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol BXMNativeAdDelegate <NSObject>
@@ -18,17 +19,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 广告加载成功
 /// @param nativeAdDataArray 广告数据集合
-- (void)nativeAdsSuccessToLoad:(NSArray<BXMNativeAdDataObject *> *_Nullable)nativeAdDataArray;
+- (void)nativeAdsSuccessToLoad:(NSArray<BXMNativeAdDataObject *> *_Nullable)nativeAdDataArray   nativeAd:(BXMNativeAd *)nativeAd;
 
 /// 广告加载失败
 /// @param error 失败原因
-- (void)nativeAdsLoadFailWithError:(NSError *_Nullable)error;
+- (void)nativeAdsLoadFailWithError:(NSError *_Nullable)error    nativeAd:(BXMNativeAd *)nativeAd;
 
 @end
 
 
 /// 信息流自渲染广告
 @interface BXMNativeAd : NSObject
+
 
 /// 代理
 @property (nonatomic, weak) id<BXMNativeAdDelegate> delegate;

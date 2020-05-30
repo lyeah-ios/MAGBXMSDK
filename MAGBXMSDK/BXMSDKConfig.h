@@ -14,11 +14,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
-        变现猫初始化
- */
+    变现猫初始化
+*/
+
 +(void)bxmConfigManager;
 
-/// 获取sdk版本号
+
+/***
+    获取sdk版本号
+ */
 + (NSString *)sdkVersion;
 
 

@@ -9,6 +9,9 @@
 #ifndef BXMEnumFile_h
 #define BXMEnumFile_h
 
+
+#define BXM_DEPRECATED_MSG(s) __attribute__((deprecated(s)))
+
 // 自渲染广告类型
 typedef NS_ENUM(NSInteger, BXMNativeAdMode) {
     BXMNativeAdModeSmallImage = 2, // 小图

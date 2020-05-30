@@ -10,6 +10,8 @@
 #import <UIKit/UIKit.h>
 #import "BXMEnumFile.h"
 
+@class BXMNativeExpressAd;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol BXMNativeExpressAdDelegate <NSObject>
@@ -18,33 +20,33 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 拉取广告成功的回调
 /// @param views  广告视图集合
-- (void)nativeExpressAdSuccessToLoadWithViews:(NSArray<__kindof UIView *> *)views;
+- (void)nativeExpressAdSuccessToLoadWithViews:(NSArray<__kindof UIView *> *)views  expressAd:(BXMNativeExpressAd *)expressAd;
 
 
 /// 拉取广告失败的回调
 /// @param error  错误信息
-- (void)nativeExpressAdFailToLoadWithError:(NSError *)error;
+- (void)nativeExpressAdFailToLoadWithError:(NSError *)error expressAd:(BXMNativeExpressAd *)expressAd;
 
 
 /// 广告渲染成功
 /// @param nativeExpressAdView 广告视图
-- (void)nativeExpressAdViewRenderSuccess:(UIView *)nativeExpressAdView;
+- (void)nativeExpressAdViewRenderSuccess:(UIView *)nativeExpressAdView expressAd:(BXMNativeExpressAd *)expressAd;
 
 
 /// 广告渲染失败
 /// @param nativeExpressAdView 广告视图
 /// @param error  错误信息
-- (void)nativeExpressAdViewRenderFail:(UIView *)nativeExpressAdView error:(NSError *)error;
+- (void)nativeExpressAdViewRenderFail:(UIView *)nativeExpressAdView error:(NSError *)error  expressAd:(BXMNativeExpressAd *)expressAd;
 
 
 /// 广告被点击的回调
 /// @param nativeExpressAdView 广告视图
-- (void)nativeExpressAdViewDidClicked:(UIView *)nativeExpressAdView;
+- (void)nativeExpressAdViewDidClicked:(UIView *)nativeExpressAdView  expressAd:(BXMNativeExpressAd *)expressAd;
 
 
 /// 广告被关闭的回调
 /// @param nativeExpressAdView 广告视图
-- (void)nativeExpressAdViewDidClosed:(UIView *)nativeExpressAdView;
+- (void)nativeExpressAdViewDidClosed:(UIView *)nativeExpressAdView  expressAd:(BXMNativeExpressAd *)expressAd;
 
 
 @end
