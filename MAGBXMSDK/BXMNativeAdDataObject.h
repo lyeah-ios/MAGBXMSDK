@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BXMNativeAdDataObject : NSObject
 
+/// 广告位Id
+@property (nonatomic, copy) NSString *adId;
 /// 广告标题
 @property (nonatomic, copy) NSString *title;
 

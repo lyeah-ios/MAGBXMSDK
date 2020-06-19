@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "BXMEnumFile.h"
 
 @class BADBuoyageAd;
 NS_ASSUME_NONNULL_BEGIN
@@ -38,10 +37,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-
-/**
-        BADBuoyageAd类 将不再维护使用，请尽快更换 BXMBuoyageAd类 使用及更新相关接口，以免影响后续使用
- */
 @interface BADBuoyageAd : NSObject
 
 @property(nonatomic,weak)id <BADBuoyageAdDelagate > delegate;
@@ -54,7 +49,7 @@ NS_ASSUME_NONNULL_BEGIN
 */
 - (instancetype)initWithAdId:(NSString *)adId
                        frame:(CGRect )frame
-                  controller:(UIViewController *)controller BXM_DEPRECATED_MSG("BADBuoyageAd类 将不再维护使用，请尽快更换 BXMBuoyageAd类 使用及更新相关接口，以免影响后续使用");;
+                  controller:(UIViewController *)controller;
 /**
             加载浮标
  */

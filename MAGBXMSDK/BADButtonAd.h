@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "BXMEnumFile.h"
 @class BADButtonAd;
 NS_ASSUME_NONNULL_BEGIN
 
@@ -36,20 +35,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-/**
-     BADButtonAd类 将不再维护使用，请尽快更换 BXMButtonAd类 使用及更新相关接口，以免影响后续使用
- */
 @interface BADButtonAd : NSObject
-
 
 @property(nonatomic,weak)id <BADButtonAdDelagate> delegate;
 
-/**
-    按钮初始化
- */
 - (instancetype)initWithAdId:(NSString *)adId
                        frame:(CGRect)frame
-                  controller:(UIViewController *)controller BXM_DEPRECATED_MSG("BADButtonAd类 将不再维护使用，请尽快更换 BXMButtonAd类 使用及更新相关接口，以免影响后续使用");
+                  controller:(UIViewController *)controller;
 /**
         加载 button
  */

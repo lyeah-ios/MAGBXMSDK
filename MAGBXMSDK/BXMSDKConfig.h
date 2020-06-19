@@ -15,9 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
     变现猫初始化
-*/
-
-+(void)bxmConfigManager;
+ @param appId  应用Id
+ */
++(void)bxmConfigManagerAppId:(NSString *)appId;
 
 
 /***
